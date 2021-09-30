@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "rn-animations-projects",
+    "slug": "rn-animations-projects",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "rn-animations-projects"
+}
