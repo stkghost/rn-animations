@@ -1,21 +1,26 @@
-import { StatusBar } from 'expo-status-bar';
+// In App.js in a new project
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import { NavigationContainer } from '@react-navigation/native';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { Carousel2 } from './src/screens/Carousel2';
+import { Details } from './src/screens/Details';
+import { GalleryView } from './src/screens/GalleryView';
+import { Home } from './src/screens/Home';
+
+
+const Drawer = createDrawerNavigator()
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer>
+      <Drawer.Navigator initialRouteName="Carousel2">
+        <Drawer.Screen name="Home" component={Home} options={{ headerShown: false }} />
+        <Drawer.Screen name="Details" component={Details} options={{ headerShown: false }} />
+        <Drawer.Screen name="GalleryView" component={GalleryView} options={{ headerShown: false }} />
+        <Drawer.Screen name="Carousel2" component={Carousel2} options={{ headerShown: false }} />
+
+      </Drawer.Navigator>
+    </NavigationContainer>
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
