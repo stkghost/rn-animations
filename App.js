@@ -16,9 +16,8 @@ export default function App() {
       <Drawer.Navigator initialRouteName="Carousel2">
         <Drawer.Screen name="Home" component={Home} options={{ headerShown: false }} />
         <Drawer.Screen name="Details" component={Details} options={{ headerShown: false }} />
-        <Drawer.Screen name="GalleryView" component={GalleryView} options={{ headerShown: false }} />
-        <Drawer.Screen name="Carousel2" component={Carousel2} options={{ headerShown: false }} />
-
+        <Drawer.Screen name="Caroulsel1" component={GalleryView} options={{ headerShown: true }} />
+        <Drawer.Screen name="Carousel2" component={Carousel2} options={{ headerShown: true }} />
       </Drawer.Navigator>
     </NavigationContainer>
   );
