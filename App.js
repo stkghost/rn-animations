@@ -6,6 +6,7 @@ import { Carousel2 } from './src/screens/Carousel2';
 import { Details } from './src/screens/Details';
 import { GalleryView } from './src/screens/GalleryView';
 import { Home } from './src/screens/Home';
+import { Parallax } from './src/screens/Parallax';
 
 
 const Drawer = createDrawerNavigator()
@@ -13,11 +14,12 @@ const Drawer = createDrawerNavigator()
 export default function App() {
   return (
     <NavigationContainer>
-      <Drawer.Navigator initialRouteName="Carousel2">
+      <Drawer.Navigator initialRouteName="Home">
         <Drawer.Screen name="Home" component={Home} options={{ headerShown: false }} />
         <Drawer.Screen name="Details" component={Details} options={{ headerShown: false }} />
         <Drawer.Screen name="Caroulsel1" component={GalleryView} options={{ headerShown: true }} />
         <Drawer.Screen name="Carousel2" component={Carousel2} options={{ headerShown: true }} />
+        <Drawer.Screen name="Parallax" component={Parallax} options={{ headerShown: true }} />
       </Drawer.Navigator>
     </NavigationContainer>
   );

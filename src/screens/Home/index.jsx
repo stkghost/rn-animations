@@ -18,6 +18,10 @@ export function Home({ navigation }) {
         title="Carousel 2"
         onPress={() => navigation.navigate("Carousel2")}
       />
+      <Button
+        title="Parallax"
+        onPress={() => navigation.navigate("Parallax")}
+      />
     </View>
   );
 }
